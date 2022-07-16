@@ -3,6 +3,9 @@ package com.example.thithuchanh.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
 @Getter
