@@ -14,12 +14,12 @@ import javax.persistence.*;
 @Table(name = "sales")
 public class Sale {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String SlNo;
     private String SalesmanID;
     private String SalesmanName;
     @ManyToOne
-    @JoinColumn(name = "ProdID")
+    @JoinColumn(name = "ProdID", referencedColumnName = "ProdID")
     private Product ProdID;
     private String DOS;
 }

@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -18,10 +19,10 @@ import java.math.BigDecimal;
 @Table(name = "products")
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String ProdID;
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int ProdID;
     private String ProdName;
     private String Description;
-    private String DateOfManf;
+    private LocalDateTime DateOfManf;
     private BigDecimal Price;
 }
